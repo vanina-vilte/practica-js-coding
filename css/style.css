@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 930px; /*MD 1280px  HD 1920px*/
+    margin: 0 auto;
+}
+
+/*navbar*/
+header {
+    width: 930px;
+    height: 70px;
+    background-color: #F8F8F8;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+header > h1 , header > h2 {
+    margin: 0 30px;
+}
+
+
+/*main*/
+
+/*section 1*/
+main {
+    height: 930px;
+    height: 890px;
+    background: rgb(111,89,100);
+    background: radial-gradient(circle, rgba(111,89,100,1) 0%, rgba(30,14,18,1) 100%);
+}
+
+#about {
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-about {
+    width: 390px;
+}
+
+.text-about {
+    width: 450px;
+    height: 266.58px;
+    font-size: 13px;
+    background-color: #F2EDF2;
+}
+
+.text-about p , .text-about a{
+    padding: 10px;
+}
+
+#jayne {
+    width: 100%;
+    border: 5px solid #C0C0C0;
+}
+
+.encabezado {
+    height: 20px;
+    color: white;
+    padding: 10px;
+    background: rgb(177,176,181);
+    background: linear-gradient(0deg, rgba(177,176,181,1) 0%, rgba(135,133,147,1) 50%, rgba(177,176,181,1) 100%);
+}
+
+/*section 2*/
+#pages {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lamode , .family , .five{
+    width: 270px;
+    align-items: center;
+    background-color: #F2EDF2;
+}
+
+.lamode p, .family p, .five p {
+    font-size: 12px;
+    text-align: justify;
+    padding: 5px 10px;
+}
+
+.tamañoImg {
+    width: 100%;
+}
+
+#tecnolamode {
+    padding-top: 5px;
+}
+
+.tecnologias {
+    width: 40px;
+    padding: 5px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    background-color: #407D61;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/*footer*/
+footer {
+    width: 930px;
+    height: 70px;
+    background-color: #F8F8F8;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.link2 {
+    font-style: italic;
+    color: black;
+    padding-right: 15px;
+}
+
+.contactos {
+    width: 20px;
+}
+
+/* MODO OSCURO */
+.darkMode header, .darkMode footer {
+    background-color: black;
+    color: white;
+    
+}
+
+.darkMode p {
+    color: gray;
+}

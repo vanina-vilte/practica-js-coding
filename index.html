@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jayne Doe</h1>
+            <button onclick="switchMode()">switch mode</button>
+            <h2>Ing en informatica</h2>
+        </header>
+        <main>
+            <section id="about">
+                <div class="img-about">
+                    <img src="img/photo_of_me.jpg" alt="jayne" id="jayne">
+                </div>
+                <div class="text-about">
+                    <div class="encabezado">
+                        <h3>About...</h3>
+                    </div>
+                    <p id="parrafo1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus possimus optio nihil voluptatum. Architecto, repellat provident vel quidem voluptas repudiandae debitis ullam placeat.</p>
+                    <p>Illo aspernaptur reprehenderit facere saepe quos laudantium itaque vitae nesciunt in cum optio dignissimos blanditiis libero, debitis eius culpa incidunt, itaque vitae nesciunt in cum, blanditiis libero, laudantium itaque vitae nesciunt in cum optio dignissimos.</p>
+                    <a href="#" onclick="alerta()">Continuar leyendo...</a>
+                    <button class="boton" onclick="cambioPerfil()">cambiar perfil</button>
+                </div>
+            </section>
+            <section id="pages">
+                <div class="lamode">
+                    <div class="encabezado">
+                        <h3 onclick="cambiaTexto(this)">La mode</h3>
+                    </div>
+                    <img src="img/lamode.png" alt="la mode pagina" class="tamañoImg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, neque! Provident voluptate, ipsa dolorem, eum tempore neque fugiat sint repellat, eveniet rerum ipsum, adipisicing elit. Quod, neque! Provident voluptate, ipsa dolorem, eum tempore neque.</p>
+                    <div class="encabezado">
+                        <h5>Technologies:</h5>
+                    </div>
+                    <div id="tecnolamode">
+                        <img onmouseover="cambiarImg(this)" onmouseout="regresaImg(this)" src="img/php.png" alt="php" class="tecnologias">
+                        <img src="img/codeigniter.png" alt="code" class="tecnologias">
+                        <img src="img/jQuery.png" alt="jquery" class="tecnologias">
+                        <img src="img/ajax.png" alt="ajax" class="tecnologias">
+                        <img src="img/mysql.png" alt="mysql" class="tecnologias">
+                        <img src="img/HTML.png" alt="html" class="tecnologias">
+                        <img src="img/CSS.png" alt="css" class="tecnologias">
+                        <img src="img/bootstrap.png" alt="bootstrap" class="tecnologias">
+                    </div>
+                    <div class="boton" onclick="eliminar(this)">
+                        <a href="https://www.google.com" target="_blank" class="link">La Mode</a>
+                    </div>
+                </div>
+                <div class="family">
+                    <div class="encabezado">
+                        <h3>Family Contacts</h3>
+                    </div>
+                    <img src="img/familycontacts.png" alt="family contacts pagina" class="tamañoImg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, neque! Provident voluptate, ipsa dolorem, eum tempore neque fugiat sint repellat, eveniet rerum ipsum, adipisicing elit. Quod, neque! Provident voluptate, ipsa dolorem, eum tempore neque.</p>
+                    <div class="encabezado">
+                        <h5>Technologies:</h5>
+                    </div>
+                    <div id="technofamcont">
+                        <img src="img/JavaScript.png" alt="js" class="tecnologias">
+                        <img src="img/mongodb.png" alt="mongodb" class="tecnologias">
+                        <img src="img/expressjs.png" alt="expressjs" class="tecnologias">
+                        <img src="img/angular.png" alt="angular" class="tecnologias">
+                        <img src="img/nodejs.png" alt="nodejs" class="tecnologias">
+                        <img src="img/HTML.png" alt="html" class="tecnologias">
+                        <img src="img/CSS.png" alt="css" class="tecnologias">
+                        <img src="img/socket.png" alt="socket" class="tecnologias">
+                    </div>
+                    <div class="boton">
+                        <a href="https://www.google.com" target="_blank" class="link">Family Contacts</a>
+                    </div>
+                </div>
+                <div class="five">
+                    <div class="encabezado">
+                        <h3>fiveEleven</h3>
+                    </div>
+                    <img src="img/fiveEleven.png" alt="fiveEleven pagina" class="tamañoImg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, neque! Provident voluptate, ipsa dolorem, eum tempore neque fugiat sint repellat, eveniet rerum ipsum, adipisicing elit. Quod, neque! Provident voluptate, ipsa dolorem, eum tempore neque.</p>
+                    <div class="encabezado">
+                        <h5>Technologies:</h5>
+                    </div>
+                    <div id="technofivele">
+                        <img src="img/python.png" alt="python" class="tecnologias">
+                        <img src="img/django.png" alt="django" class="tecnologias">
+                        <img src="img/d3.png" alt="d3" class="tecnologias">
+                        <img src="img/angular.png" alt="angular" class="tecnologias">
+                        <img src="img/sqlite.png" alt="sqlite" class="tecnologias">
+                        <img src="img/HTML.png" alt="html" class="tecnologias">
+                        <img src="img/CSS.png" alt="css" class="tecnologias">
+                        <img src="img/JavaScript.png" alt="JavaScript" class="tecnologias">
+                        <img src="img/materialize.png" alt="materialize" class="tecnologias">
+                    </div>
+                    <div class="boton">
+                        <a href="https://www.google.com" target="_blank" class="link">fiveEleven</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>jdoe@gmail.com | 206-555-1212</p>
+            <div>
+                <a href="https://www.google.com" target="_blank" class="link2">
+                    <img src="img/github.png" alt="github" class="contactos">
+                    jaynedev
+                </a>
+                <a href="https://www.google.com" target="_blank" class="link2">
+                    <img src="img/linkedin.png" alt="linkedin" class="contactos">
+                    jayne-doe
+                </a>
+                <a href="https://www.google.com" target="_blank" class="link2">
+                    <img src="img/twitter.png" alt="twitter" class="contactos">
+                    jdtweets
+                </a>
+                <a href="https://www.google.com" target="_blank" class="link2">
+                    <img src="img/codepen.png" alt="codepen" class="contactos">
+                    jaynedev
+                </a>
+            </div>
+        <div>
+            <h5 id="clicks">0</h5>
+            <button onclick="hizoClick(this)" class="boton">haz click aquí</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
